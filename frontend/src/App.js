@@ -16,7 +16,7 @@ function App() {
 
     try {
       // हमारे बैकएंड को http://localhost:8000/generate-proposal पर रिक्वेस्ट भेजना
-      const response = await axios.post('http://localhost:8000/generate-proposal', {
+      const response = await axios.post('https://ai-proposal-generator.onrender.com/generate-proposal', {
         prompt: `Write a professional project proposal based on these details: ${prompt}`
       });
       // AI से मिले जवाब को 'proposal' स्टेट में सेव करना
